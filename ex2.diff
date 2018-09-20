@@ -1,0 +1,12 @@
+diff --git a/arch/x86/boot/compressed/misc.c b/arch/x86/boot/compressed/misc.c
+index c945acd..ccb8612 100644
+--- a/arch/x86/boot/compressed/misc.c
++++ b/arch/x86/boot/compressed/misc.c
+@@ -406,6 +406,6 @@ asmlinkage __visible void *extract_kernel(void *rmode, memptr heap,
+ 			NULL, error);
+ 	parse_elf(output);
+ 	handle_relocations(output, output_len, virt_addr);
+-	debug_putstr("done.\nBooting the kernel.\n\n##### Zac German (UFID: 1198-8221)#####\n");
++	debug_putstr("done.\nBooting the kernel.\n\n### Zac German (Exercise 2)###\n");
+ 	return output;
+ }
